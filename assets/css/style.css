@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: whitesmoke;
+    color: rgb(41, 37, 33);
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgb(41, 37, 33);
+    padding-left: 1.1em;
+    
+}
+
+.nav a:hover {
+    color: brown;
+    font-size: 1.35rem;
+}
+
+.nav-links { 
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/*  ...................................................... Main Section */
+
+.section-main {
+    background-image: url("/assets/images/boitumelo-phetla-0DJHJcpwN9Q-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1em 1fr 1fr;
+    grid-area: 
+        "header header"
+        "body body"
+        "date ."
+            ;
+}
+
+.main-header {
+    color: whitesmoke;
+    grid-area: header;
+    grid-row: 3;
+    font-size: 2rem;
+    text-shadow: 0 2px 4px black;
+    padding-bottom: 2em;
+
+}
+
+.main-text {
+    color: rgb(255, 255, 255);
+    grid-area: text;
+    grid-row: 3;
+    align-self: end;
+    justify-self: start;
+    max-width: 75%;
+    padding-bottom: 1.5em;
+    text-shadow: 0 2px 15px black;
+    font-size: 0.85rem;
+    line-height: 1.2;
+    letter-spacing: 0.75px;
+    
+}
+
+.main-date {
+    color: rgb(255, 255, 255);
+    grid-area: date;
+    grid-column: 1 /;
+    grid-row: 2 ;
+    align-self: end;
+    text-shadow: 0 2px 3px black;
+    padding-bottom: 2.5em;
+
+}
+
+span {
+    color: rgb(6, 247, 247);
+}
+
+/*  ................................................... Section Body */
+
+.section-body {
+    text-align: left;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+
+.image-body {
+    background-color: red;
+    background-image: url('/assets/images/girl-with-red-hat-Z6SXt1v5tP8-unsplash.jpg');
+    background-size: cover;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+.blog-date {
+    padding-bottom: 1em;
+}
