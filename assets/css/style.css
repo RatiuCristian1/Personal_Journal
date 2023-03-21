@@ -40,6 +40,10 @@ body {
     font-weight: bold;
 }
 
+.logo {
+    font-size: 1.75rem;
+}
+
 /*  ...................................................... Main Section */
 
 .section-main {
@@ -85,8 +89,7 @@ body {
 .main-date {
     color: rgb(255, 255, 255);
     grid-area: date;
-    grid-column: 1 /;
-    grid-row: 2 ;
+    grid-row: 2 / 3 ;
     align-self: end;
     text-shadow: 0 2px 3px black;
     padding-bottom: 2.5em;
@@ -116,9 +119,12 @@ span {
     margin-bottom: 1em;
 }
 
+
 .image-body2, 
 .image-body3, 
-.image-body4 {
+.image-body4,
+.image-body5,
+.image-body6 {
     background-size: cover;
     height: 300px;
     margin: 15px auto;
@@ -135,6 +141,14 @@ span {
 .image-body4{
     background-image: url('/assets/images/hannes-kottner-MWYTI67gFM0-unsplash.jpg')
 
+}
+
+.image-body5 {
+    background-image: url('/assets/images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg');
+}
+
+.image-body6 {
+    background-image: url('/assets/images/uriel-soberanes-MxVkWPiJALs-unsplash.jpg');
 }
 
 .display-blog {
@@ -161,3 +175,110 @@ span {
     line-height: 1.4;
 }
 
+
+@media (min-width: 600px) {
+    
+    .nav {
+        padding: 1rem 4rem;
+    }
+
+    .nav a {
+        font-size: 1.5rem;
+    }
+    
+    .logo {
+        font-size: 2.25rem;
+    }
+
+    .section-main {
+        min-height: 800px;
+        position: relative;
+        display: grid;
+        grid-template-columns: 1em 1fr 1fr;
+        grid-area: 
+        "header header"
+        "body body"
+        "date ."
+            ;
+    }
+
+    .main-header {
+        color: whitesmoke;
+        position: absolute;
+        left: 20px;
+        top: 550px;
+        grid-area: header;
+        grid-row: 5;
+        grid-column: 2 / 4 ;
+        font-size: 4rem;
+        text-shadow: 0 2px 4px black;
+    
+    
+    }
+    
+    .main-text {
+        color: rgb(255, 255, 255);
+        position: absolute;
+        left: 20px;
+        bottom: 40px;
+        grid-area: text;
+        grid-row: 5;
+        grid-column: 2;
+        align-self: end;
+        justify-self: start;
+        max-width: 75%;
+        padding-bottom: 2.5em;
+        text-shadow: 0 2px 15px black;
+        font-size: 1.25rem;
+        line-height: 1.2;
+        letter-spacing: 0.75px;
+    
+        
+    }
+    
+    .main-date {
+        color: rgb(255, 255, 255);
+        position: absolute;
+        left: 25px;
+        bottom: 200px;
+        grid-area: date;
+        grid-column: 2 / 2;
+        grid-row: 3 ;
+        align-self: end;
+        text-shadow: 0 2px 3px black;
+        padding-bottom: 2.5em;
+    
+    }
+
+    .container1,
+    .container2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        padding-top: 2em;
+    }
+
+
+    .image-container1,
+    .image-container2 {
+        height: 750px;
+    }
+
+    .image-body2 {
+        margin-top: 0;
+    }
+
+    .image-body1,
+    .image-body2,
+    .image-body5,
+    .image-body6 {
+        height: 550px;
+    }
+ 
+
+
+
+    
+
+}
